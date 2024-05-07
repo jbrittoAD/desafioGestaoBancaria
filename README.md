@@ -58,29 +58,35 @@ python app.py
 
 5. Acesse os endpoints conforme necessário, utilizando a ferramenta ou cliente HTTP de sua preferência (por exemplo, curl ou Postman).
 
+Claro, aqui está o texto revisado para o README.md do git:
+
 ## Testes
 
-Os testes podem ser feitos de algumas maneiras:
-    rodando via pytest:
-    No diretorio principal, deve-se rodar (para teste simplificado):
-    ```
-    pytest
-    ```
-    E para testes detalhados (mostra com mais detalhes o que está sendo testado)
-    ```
-    pytest -s
-    ```
-    De igual forma foram criados um arquivo notebook e um chamado front_simul, ambos dentro da pasta testes_codigo.
-    Ambos os arquivos simulam o front-end da aplicação e realizam as operações para que seja mantida uma forma perene, como se fosse uma simulação de utilização da API. Para rodar o notebook basta rodar:
-    ```
-    jupyter-notebook
-    ```
-    E, entrar na pasta e selecionar o arquivo chamado notebook. A partir disso deve-se rodar as celulas.
-    Para rodar o arquivo python basta entrar no diretório e rodar o comando:
-    ```
-    python front_simul.py
-    ```
+Os testes podem ser realizados de várias maneiras:
 
+### Testes com pytest:
+Para executar testes básicos, no diretório principal, execute:
+```bash
+pytest
+```
+Para testes mais detalhados (exibindo mais informações sobre o que está sendo testado), execute:
+```bash
+pytest -s
+```
 
+### Testes com arquivos de simulação:
+Foram criados dois arquivos de simulação na pasta `testes_codigo`: um arquivo de notebook e um chamado `front_simul.py`.
+Esses arquivos simulam o front-end da aplicação e realizam operações para manter uma forma perene, como se fosse uma simulação de utilização da API.
 
-**Observação:** Após realizar os testes, lembre-se de disponibilizar o código no GitHub, deixar o repositório privado e adicionar como colaboradores os usuários informados pelo recrutamento.
+#### Para executar o arquivo notebook:
+Execute o seguinte comando:
+```bash
+jupyter-notebook
+```
+Em seguida, navegue até a pasta e selecione o arquivo chamado `notebook.ipynb`. Depois disso, execute as células conforme necessário.
+
+#### Para executar o arquivo Python:
+Entre no diretório e execute o seguinte comando:
+```bash
+python front_simul.py
+```
